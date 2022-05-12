@@ -1,3 +1,3 @@
-module github.com/xlzd/gotp
+module github.com/vavikast/gotp
 
 go 1.17
