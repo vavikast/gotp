@@ -39,7 +39,7 @@ func BuildUri(otpType, secret, accountName, issuerName, algorithm string, initia
 	if otpType != OtpTypeHotp && otpType != OtpTypeTotp {
 		panic("otp type error, got " + otpType)
 	}
-	label := url.QueryEscape(accountName)
+	label := accountName
 	if issuerName != "" {
 		label = url.QueryEscape(issuerName) + ":" + label
 		q.Set("issuer", issuerName)
